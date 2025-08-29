@@ -62,3 +62,25 @@ clearBtn.addEventListener("click", function () {
 
 
 
+// copy count
+const copyCount = document.getElementById("copy-count");
+const copyButtons = document.querySelectorAll(".copy-btn");
+
+copyButtons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    let currentCount = parseInt(copyCount.textContent);
+    copyCount.textContent = currentCount + 1;
+
+    let card = btn.closest(".card-body");
+    let serviceNumber = card.querySelector("h2").innerText;
+
+    navigator.clipboard
+      .writeText(serviceNumber)
+      .then(function () {
+        alert("Number copied - " + serviceNumber);
+      })
+      .catch(function (err) {
+        alert("Failed to copy: " + err);
+      });
+  });
+});
