@@ -47,10 +47,10 @@ document.body.addEventListener("click", function (e) {
 
     historyItem.innerHTML = `
     <div>
-      <p class = 'font-medium'>${fullServiceName}</p>
-      <p class = 'text-sm text-gray-600'>${serviceNumber}</p>
+      <p class = 'font-medium text-sm sm:text-base md:text-lg'>${fullServiceName}</p>
+      <p class = 'text-xs sm:text-sm md:text-base text-gray-600'>${serviceNumber}</p>
     </div>
-    <span class = 'text-xs text-gray-500'>${time}</span>
+    <span class = 'text-xs sm:text-sm md:text-base text-gray-500'>${time}</span>
   `;
 
     historyList.append(historyItem);
@@ -84,3 +84,4 @@ copyButtons.forEach(function (btn) {
       });
   });
 });
+
