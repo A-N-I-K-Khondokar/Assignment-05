@@ -24,8 +24,8 @@ document.body.addEventListener("click", function (e) {
   if (btn) {
     let card = btn.closest(".card-body");
     let serviceName = card.querySelector("p").innerText;
-    let serviceNumber = card.querySelector("h1").innerText;
-    let fullServiceName = card.querySelector("h2").innerText;
+    let serviceNumber = card.querySelector("h2").innerText;
+    let fullServiceName = card.querySelector("h1").innerText;
 
     if (coins < 20) {
       alert("Not enough coins! You need at least 20 coins to make a call.");
