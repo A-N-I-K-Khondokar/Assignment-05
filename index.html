@@ -32,7 +32,7 @@
         <div class="right-side flex  justify-between items-center md:gap-2 gap-5 lg:gap-3">
             <div>
                 <button
-                    class="flex items-center justify-center md:gap-3 gap-4 md:w-[132px] w-[100px] h-[52px] bg-[#41ff6b1a] rounded-[50px]">
+                    class="flex items-center justify-center md:gap-3 gap-4 md:w-[132px] w-[100px] md:h-[52px] h-[45px] bg-[#41ff6b1a] rounded-[50px]">
                     <span id="heart-count" class="font-bold">0</span>
                     <img src="./images/heart.png" alt="heart icon" class="w-6 h-6">
                 </button>
@@ -40,14 +40,14 @@
             </div>
             <div>
                 <button
-                    class="flex items-center justify-center gap-3 md:w-[132px] w-[100px] h-[52px] bg-[#41ff6b1a] rounded-[50px]">
+                    class="flex items-center justify-center gap-3 md:w-[132px] w-[100px] md:h-[52px] h-[45px] bg-[#41ff6b1a] rounded-[50px]">
                     <span class="font-bold" id="money-icon">100</span>
                     <img src="./images/coin.png" alt="heart icon" class="w-6 h-6">
                 </button>
             </div>
             <div>
                 <button
-                    class="flex items-center justify-center gap-3 md:w-[132px] w-[100px] h-[52px] bg-[#00a63e] rounded-[50px]">
+                    class="flex items-center justify-center gap-3 md:w-[132px] w-[100px] md:h-[52px] h-[45px] bg-[#00a63e] rounded-[50px]">
                     <span id="copy-count" class="font-semibold text-white ">0</span> <span
                         class="text-white font-semibold">Copy</span>
 
@@ -60,7 +60,7 @@
     <section
         class="w-full h-[239px] bg-[linear-gradient(90deg,#013123,#006747_50%,#013223_100%)] text-center flex flex-col justify-center items-center ">
         <img class="w-[92px] h-[92px] " src="./images/logo.png" alt="">
-        <p class="font-bold md:text-[40px] text-[20px] text-white mt-2 ">Emergency Service Directory</p>
+        <p class="font-bold md:text-[40px] text-[20px] text-white mt-2 md:mb-0  mb-1 ">Emergency Service Directory</p>
         <p class="text-white md:text-[20px] text-[12px] font-[600px] mx-4 md:px-10">Government Emergency Services at Your
             Fingertip – A Project by
             Government of the People’s Republic of Bangladesh</p>
@@ -288,13 +288,14 @@
 
             <!-- right-side-of-card -->
             <aside class="right-div md:col-span-3 col-span-9 bg-white shadow-md rounded-xl p-6 ">
-                <div class="h-[52px] flex justify-between items-center gap-5">
+                <div class="h-[52px] flex justify-between items-center gap-5 mb-4">
                     <div class="flex justify-center h-[52px] items-center gap-2">
                         <i class="fa-regular fa-clock"></i>
-                        <p class="text-[20px] font-[500px]">Call History</p>
+                        <p class="md:text-[20px] text-[16px] font-[500px]">Call History</p>
                     </div>
                     <div>
-                        <button id="clear-history" class="bg-[#00A63E] text-white w-28 h-12 rounded-full">Clear</button>
+                        <button id="clear-history" class="bg-[#00A63E] text-white md:w-28 w-20 md:h-12 h-10 rounded-full
+                        md:text-[17px] text-[14px]   ">Clear</button>
                     </div>
                 </div>
                 <div id="history-list" class="flex flex-col gap-2"></div>
